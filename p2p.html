@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P2P</title>
+    <link rel="stylesheet" href="./views/lib_style.css">
+</head>
+<body>
+  <h1 id="main-heading">Peer Peer</h1>
+  <h1 id="for2">2</h1>
+    <div id="container">
+        
+        <div id="left-section">
+            <h2>Node</h2>
+            <label for="relay">Dial MultiAddr</label>
+            <input type="text" id="dial-multiaddr-input" placeholder="the Address you want to connect" />
+            <button id="dial-multiaddr-button">Connect</button>
+
+            <h4>PeerId</h4>
+            <p id="peer-id">None</p>
+
+            <h4>Listening Addresses</h4>
+            <ul id="listening-addresses">
+            <li>None</li>
+            </ul>
+            <h4>Connected Peers</h4>
+            <ul id="peer-connections">
+            <li>None</li>
+            </ul>
+        </div>
+
+        
+        <div id="right-section">
+
+            <div id="pubsub-section">
+                <h2>PubSub</h2>
+                <label for="topic">Subscribe to topic</label>
+                <input type="text" id="subscribe-topic-input" placeholder="my-topic" />
+                <button id="subscribe-topic-button">Subscribe</button>
+            </div>
+
+            
+            <div id="message-display">
+                <h4>Messages</h4>
+                <pre id="output"></pre>
+            </div>
+
+            
+            <div id="message-box">
+                <input type="text" id="send-topic-message-input" placeholder="hello world" disabled="disabled" />
+                <button id="send-topic-message-button" disabled="disabled">Send</button>
+            </div>
+        </div>
+    </div>
+
+  <script type="module" src="./index.js"></script>
+   
+</body>
+</html>
